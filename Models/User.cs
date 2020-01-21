@@ -15,6 +15,6 @@ namespace core_test_api.Models
         public string email {get; set;}
         public string profile {get; set;}
         [ForeignKey("user_id")]
-        public List<Post> posts {get; set;}
+        public ICollection<Post> posts {get; set;}
     }
 }

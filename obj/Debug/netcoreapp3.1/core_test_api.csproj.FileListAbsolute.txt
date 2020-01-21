@@ -38,3 +38,4 @@ D:\core_test_api\obj\Debug\netcoreapp3.1\core_test_api.RazorTargetAssemblyInfo.c
 D:\core_test_api\obj\Debug\netcoreapp3.1\core_test_api.csproj.CopyComplete
 D:\core_test_api\obj\Debug\netcoreapp3.1\core_test_api.dll
 D:\core_test_api\obj\Debug\netcoreapp3.1\core_test_api.pdb
+D:\core_test_api\bin\Debug\netcoreapp3.1\AutoMapper.dll

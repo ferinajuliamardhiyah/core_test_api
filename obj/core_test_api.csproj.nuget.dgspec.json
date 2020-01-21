@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\core_test_api\\core_test_api.csproj": {}
+    "d:\\core_test_api\\core_test_api.csproj": {}
   },
   "projects": {
-    "D:\\core_test_api\\core_test_api.csproj": {
+    "d:\\core_test_api\\core_test_api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\core_test_api\\core_test_api.csproj",
+        "projectUniqueName": "d:\\core_test_api\\core_test_api.csproj",
         "projectName": "core_test_api",
-        "projectPath": "D:\\core_test_api\\core_test_api.csproj",
+        "projectPath": "d:\\core_test_api\\core_test_api.csproj",
         "packagesPath": "D:\\Users\\bsi80089\\.nuget\\packages\\",
-        "outputPath": "D:\\core_test_api\\obj\\",
+        "outputPath": "d:\\core_test_api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",

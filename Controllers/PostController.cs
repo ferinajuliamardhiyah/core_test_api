@@ -12,6 +12,7 @@ namespace core_test_api.Controllers
 {
     [ApiController]
     [Route("post")]
+
     public class PostController : ControllerBase
     {
         private CoreDbContext _context;
@@ -50,9 +51,6 @@ namespace core_test_api.Controllers
             post.content = item.content;
             post.tags = item.tags;
             post.status = item.status;
-            post.create_time = item.create_time;
-            post.update_time = item.update_time;
-            post.user_id = item.user_id;
             _context.SaveChanges();
             return post;
         }

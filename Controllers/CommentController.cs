@@ -7,11 +7,13 @@ using Microsoft.Extensions.Logging;
 using core_test_api.Database;
 using core_test_api.Models;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace core_test_api.Controllers
 {
     [ApiController]
     [Route("comment")]
+
     public class CommentController : ControllerBase
     {
         private CoreDbContext _context;
@@ -43,22 +45,26 @@ namespace core_test_api.Controllers
         }
 
         [HttpPut("{id}")]
-        public Comment EditPost(int id, Comment item)
+        public Comment EditComment(int id, Comment item)
+        // {
+        //     Comment comment = _context.Comments.Where(item => item.id == id).Single<Comment>();
+        //     var config = new MapperConfiguration(cfg => cfg.CreateMap<CommentUpdate, Comment>().ForAllMembers(d => d.MapFrom(x => comment)));
+        //     var mapper = config.CreateMapper();
+        //     mapper.Map<CommentUpdate, Comment>(item);
+        //     _context.SaveChanges();
+        //     return comment;
+        // }
         {
             Comment comment = _context.Comments.Where(item => item.id == id).Single<Comment>();
             comment.content = item.content;
             comment.status = item.status;
-            comment.create_time = item.create_time;
             comment.author = item.author;
-            comment.email = item.email;
-            comment.url = item.url;
-            comment.post_id = item.post_id;
             _context.SaveChanges();
             return comment;
         }
 
         [HttpDelete("{id}")]
-        public IEnumerable<Comment> Deletepost(int id)
+        public IEnumerable<Comment> DeleteComment(int id)
         {
             Comment comment = _context.Comments.Where(item => item.id == id).Single<Comment>();
             _context.Comments.Remove(comment);

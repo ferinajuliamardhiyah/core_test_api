@@ -1,0 +1,4 @@
+[2020-01-20T13:13:29] http GET localhost:5000/user
+[2020-01-20T13:14:20] http GET localhost:5000/user/1
+[2020-01-20T15:24:55] http GET 8ead0567.ngrok.io/user
+[2020-01-20T15:24:59] http GET 8ead0567.ngrok.io/favicon.ico

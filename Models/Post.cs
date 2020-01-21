@@ -16,6 +16,7 @@ namespace core_test_api.Models
         public string status {get; set;}
         public string create_time {get; set;}
         public string update_time {get; set;}
+        [Required]
         public int user_id {get; set;}
         [ForeignKey("post_id")]
         public ICollection<Comment> comments {get; set;}

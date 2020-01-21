@@ -14,9 +14,10 @@ namespace core_test_api.Controllers
     [Route("user")]
     public class UserController : ControllerBase
     {
+
         private CoreDbContext _context;
 
-        public UserController(CoreDbContext context)
+        public UserController(CoreDbContext context, ILogger<UserController> logger)
         {
             _context = context;
         }
